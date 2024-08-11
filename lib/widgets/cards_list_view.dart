@@ -40,7 +40,7 @@ class CardsListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 130,
+      height: 110,
       // first solution to make loop on list of items and make it widgets
       // child: ListView.builder(
       //   scrollDirection: Axis.horizontal,

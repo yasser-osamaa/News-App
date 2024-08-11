@@ -18,7 +18,7 @@ class CustomCard extends StatelessWidget {
           ),
         ),
         height: 130,
-        width: 180,
+        width: 170,
         child: Center(
           child: Text(
             item.title,
