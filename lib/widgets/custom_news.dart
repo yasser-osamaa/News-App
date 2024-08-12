@@ -9,7 +9,7 @@ class CustomNews extends StatelessWidget {
     return Column(
       children: [
         ClipRRect(
-          borderRadius: const BorderRadius.all(Radius.circular(20)),
+          borderRadius: const BorderRadius.all(Radius.circular(12)),
           child: Image(
             height: 250,
             width: double.infinity,
