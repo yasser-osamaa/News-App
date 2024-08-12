@@ -26,7 +26,7 @@ class CustomNews extends StatelessWidget {
               color: Colors.black, fontSize: 20, fontWeight: FontWeight.w500),
         ),
         const SizedBox(
-          height: 10,
+          height: 2,
         ),
         Text(
           articles.subTitle ?? '',
