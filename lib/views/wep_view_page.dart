@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-class ContainerUrl extends StatefulWidget {
-  const ContainerUrl({super.key, required this.url});
+class ContainerUrlPage extends StatefulWidget {
+  const ContainerUrlPage({super.key, required this.url});
   final String url;
   @override
-  State<ContainerUrl> createState() => _ContainerUrlState();
+  State<ContainerUrlPage> createState() => _ContainerUrlPageState();
 }
 
-class _ContainerUrlState extends State<ContainerUrl> {
+class _ContainerUrlPageState extends State<ContainerUrlPage> {
   late WebViewController controller;
   @override
   void initState() {

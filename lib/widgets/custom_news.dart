@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/models/article_model.dart';
-import 'package:news_app/views/container_url.dart';
+import 'package:news_app/views/wep_view_page.dart';
 
 class CustomNews extends StatelessWidget {
   const CustomNews({super.key, required this.articles});
@@ -13,7 +13,7 @@ class CustomNews extends StatelessWidget {
           context,
           MaterialPageRoute(
             builder: (context) {
-              return ContainerUrl(
+              return ContainerUrlPage(
                 url: articles.url,
               );
             },
