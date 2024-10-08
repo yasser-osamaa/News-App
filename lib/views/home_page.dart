@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:news_app/widgets/cards_list_view.dart';
 import 'package:news_app/widgets/news_list_builder.dart';
 
@@ -29,8 +30,8 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      body: const Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16),
+      body: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 16.w),
         // child: Column(
         //   children: [
         //
@@ -41,17 +42,19 @@ class HomePage extends StatelessWidget {
         //   ],
         // ),
         child: CustomScrollView(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           slivers: [
-            SliverToBoxAdapter(
+            const SliverToBoxAdapter(
               child: CardsListView(),
             ),
             SliverToBoxAdapter(
               child: SizedBox(
-                height: 20,
+                height: 20.h,
               ),
             ),
-            NewsListViewBuileder(category: 'general',),
+            const NewsListViewBuileder(
+              category: 'general',
+            ),
           ],
         ),
       ),

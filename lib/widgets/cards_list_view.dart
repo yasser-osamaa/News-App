@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:news_app/models/card_item.dart';
 import 'package:news_app/widgets/custom_card.dart';
 
@@ -40,7 +41,7 @@ class CardsListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 100,
+      height: 100.h,
       // first solution to make loop on list of items and make it widgets
       // child: ListView.builder(
       //   scrollDirection: Axis.horizontal,

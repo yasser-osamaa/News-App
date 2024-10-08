@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:news_app/widgets/news_list_builder.dart';
 
 class CardsView extends StatelessWidget {
@@ -12,16 +13,17 @@ class CardsView extends StatelessWidget {
         centerTitle: true,
         title: Text(
           category,
-          style: const TextStyle(fontWeight: FontWeight.w300, fontSize: 28),
+          style: TextStyle(fontWeight: FontWeight.w300, fontSize: 28.sp),
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 10),
+        padding: EdgeInsets.symmetric(horizontal: 10.w),
         child: CustomScrollView(
+          physics: const BouncingScrollPhysics(),
           slivers: [
-            const SliverToBoxAdapter(
+            SliverToBoxAdapter(
               child: SizedBox(
-                height: 10,
+                height: 10.h,
               ),
             ),
             NewsListViewBuileder(

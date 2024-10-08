@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:news_app/models/card_item.dart';
 import 'package:news_app/views/cards_view.dart';
 
@@ -21,7 +22,7 @@ class CustomCard extends StatelessWidget {
         );
       },
       child: Padding(
-        padding: const EdgeInsets.only(right: 12),
+        padding: EdgeInsets.only(right: 12.w),
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(12),
@@ -30,14 +31,14 @@ class CustomCard extends StatelessWidget {
               image: AssetImage(item.img),
             ),
           ),
-          height: 130,
-          width: 170,
+          height: 130.h,
+          width: 170.w,
           child: Center(
             child: Text(
               item.title,
-              style: const TextStyle(
+              style: TextStyle(
                 color: Colors.white,
-                fontSize: 20,
+                fontSize: 20.sp,
               ),
             ),
           ),

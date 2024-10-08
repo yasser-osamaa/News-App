@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:news_app/models/article_model.dart';
 import 'package:news_app/services/news_services.dart';
 import 'package:news_app/widgets/news_list_view.dart';
@@ -30,19 +31,19 @@ class _NewsListViewBuilederState extends State<NewsListViewBuileder> {
             articles: snapshot.data!,
           );
         } else if (snapshot.hasError) {
-          return const SliverToBoxAdapter(
+          return SliverToBoxAdapter(
             child: SizedBox(
-              height: 450,
-              child: Center(
+              height: 450.h,
+              child: const Center(
                 child: Text('oops error here Try Again'),
               ),
             ),
           );
         } else {
-          return const SliverToBoxAdapter(
+          return SliverToBoxAdapter(
             child: SizedBox(
-              height: 450,
-              child: Center(
+              height: 450.h,
+              child: const Center(
                 child: CircularProgressIndicator(),
               ),
             ),
